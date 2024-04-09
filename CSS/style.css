@@ -4,3 +4,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --header-height: 8vh
+}
+
+/* HEADER */
+header {
+    height: var(--header-height);
+    width: 100%;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* GRID */
+.grid-container {
+    width: 80%;
+    max-width: 680px;
+    background-color: beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid black;
+    width: calc(100% / 10);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
