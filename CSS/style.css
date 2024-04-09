@@ -39,14 +39,14 @@ button {
 .grid-container {
     width: 80%;
     max-width: 680px;
-    background-color: beige;
+    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 }
 
+/* BOX */
 .box {
     border: 1px solid black;
     width: calc(100% / 10);

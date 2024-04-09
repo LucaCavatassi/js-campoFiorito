@@ -22,3 +22,6 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 # Milestone 1 
  - Creo tutta la parte grafica in css e html
  - Al click del tasto start game la griglia compare
+    1 - Aggiungo event-listener al bottone per potergli dare l'azione. 
+    2 - Al click dell'bottone appendo all'elemento grid container un div con la classe box creata in css, questo fino a che non arrivo a cento
+- Al click della cella essa si colora di verde e mi restituisce il numero in console
