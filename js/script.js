@@ -13,7 +13,6 @@ startBtn.addEventListener ("click", function (){
 
 // BOMBS
 const bombArray = []
-
 while (bombArray.length < 10){
     const rndNum = Math.floor(Math.random() * 100) + 1;
     if (!(bombArray.includes(rndNum))){
@@ -24,8 +23,4 @@ console.log(bombArray);
 
 // CLICKED NUMBERS
 const numArray = []
-console.log(numArray);
-
-if (numArray.length === 90) {
-    console.warn("HAI VINTO!");
-}
+// console.log(numArray);

@@ -9,20 +9,28 @@ function createCell (num) {
 function clickCallback () {
     const clickedNumElem = this
     const clickedNumNum = parseInt(this.innerHTML)
-    console.log(clickedNumNum);
-
+    // console.log(clickedNumNum);
+    
     if (bombArray.includes(clickedNumNum)) {
         clickedNumElem.style.backgroundColor = "red"
-        console.warn("HAI PERSO! BOOOOOOM!");
-    }else {
+        alert("BOOOM! Hai perso!")
+        // PAGE RELOAD
+        setTimeout(function(){
+            location.reload();
+        }, 1000);
+
+    } else if (!(numArray.includes(clickedNumNum))) {
         clickedNumElem.style.backgroundColor = "limegreen"
-        console.warn("CONTINUA");
+        console.log("Continua!");
+        numArray.push(clickedNumNum)
+    } else if (numArray.includes(clickedNumNum)){
+        alert ("Hai già cliccato questo numero!")
     }
 
-    if (numArray.includes(clickedNumNum)) {
-        alert ("Hai già cliccato questo numero!")
-    } else {
-        numArray.push(clickedNumNum)
+    if (numArray.length === 90) {
+        alert("Hai vinto!")
     }
     console.log(numArray);
 }
+
+
