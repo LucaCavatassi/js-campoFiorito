@@ -33,3 +33,8 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 # Milestone 3
 - Conto il numero di click effettuati dall'utente 
 - Se il numero di click meno il numero delle bombe (10) è uguale 100 allora l'utente ha vinto. 
+
+
+
+Se il numero cliccato è nell'array bomb allora hai perso 
+altrimenti continua finche l'array length è 90 

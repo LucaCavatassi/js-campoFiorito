@@ -9,7 +9,7 @@ function createCell (num) {
 function clickCallback () {
     const clickedNumElem = this
     const clickedNumNum = parseInt(this.innerHTML)
-    console.log(clickedNumNum, clickedNumElem);
+    console.log(clickedNumNum);
 
     if (bombArray.includes(clickedNumNum)) {
         clickedNumElem.style.backgroundColor = "red"
@@ -18,4 +18,11 @@ function clickCallback () {
         clickedNumElem.style.backgroundColor = "limegreen"
         console.warn("CONTINUA");
     }
+
+    if (numArray.includes(clickedNumNum)) {
+        alert ("Hai già cliccato questo numero!")
+    } else {
+        numArray.push(clickedNumNum)
+    }
+    console.log(numArray);
 }
