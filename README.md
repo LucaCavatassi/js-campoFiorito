@@ -20,8 +20,16 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 
 
 # Milestone 1 
- - Creo tutta la parte grafica in css e html
- - Al click del tasto start game la griglia compare
+- Creo tutta la parte grafica in css e html
+- Al click del tasto start game la griglia compare
     1 - Aggiungo event-listener al bottone per potergli dare l'azione. 
     2 - Al click dell'bottone appendo all'elemento grid container un div con la classe box creata in css, questo fino a che non arrivo a cento
 - Al click della cella essa si colora di verde e mi restituisce il numero in console
+
+# Milestone 2 
+- Creo un array con 10 numeri random esclusivi, queste saranno le mie bombe
+- Se clicco su un numero dell'array allora la cella diventa rossa
+
+# Milestone 3
+- Conto il numero di click effettuati dall'utente 
+- Se il numero di click meno il numero delle bombe (10) è uguale 100 allora l'utente ha vinto. 
